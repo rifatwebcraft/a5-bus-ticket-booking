@@ -9,6 +9,196 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="text-4xl">Bismillahir Rahmanir Rahim</h1>
+    <header class="container mt-12">
+        <!-- nav section -->
+        <nav class="">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li>
+                        <a>About</a>
+                      </li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-4xl font-extrabold raleway-font">R-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-7">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class=" flex text-xl font-bold raleway-font border border-[#1dd1001a] bg-[#1dd1001a] py-4 px-7 rounded-xl"><span class="mr-3">Bus</span> <img src="images/bus-icon.png" alt=""></a>
+                </div>
+              </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+            <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+                <div class=""></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+    </header>
+    <main class="container">
+        <!-- cuppon section -->
+        <section class="mt-28">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold raleway-font">Best Offers for you</h2>
+            </div>
+            
+           <div class="border flex justify-between gap-6">
+                <div class="border rounded-3xl bg-orange-300 flex justify-between items-center p-14 w-1/2">
+                    <div class="">
+                        <h3 class="inter-font text-4xl font-black">15% OFF</h3>
+                        <p class="inter-font text-xl font-semibold">on your next purchase</p>     
+                        <p class="inter-font text-xs font-medium">use by January 2024</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="raleway-font font-bold text-4xl">NEW15</h3>
+                        <p class="raleway-font font-medium text-xl">Cupon Code</p>
+                    </div>
+                </div>
+
+                <div class="border rounded-3xl bg-orange-600 flex justify-between items-center p-14 w-1/2">
+                    <div class="">
+                        <h3 class="inter-font text-4xl font-black">15% OFF</h3>
+                        <p class="inter-font text-xl font-semibold">on your next purchase</p>     
+                        <p class="inter-font text-xs font-medium">use by January 2024</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="raleway-font font-bold text-4xl">NEW15</h3>
+                        <p class="raleway-font font-medium text-xl">Cupon Code</p>
+                    </div>
+                </div>
+           </div>
+
+           <div class="text-center mt-12">
+            <button class="btn">See All Offers</button>
+           </div>
+        </section>
+        <!-- ph poribohon section -->
+        <section class="mt-28">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold raleway-font mb-7">R.S Paribahan</h2>
+                <p>This Paribahan is the best of the country. You can enjoy more and more. This is a Great Bus. <br>It is very comportable for you. So dont miss.</p>
+            </div>
+            <!-- ticket section -->
+            <div class="flex">
+              <div class="flex justify-between w-4/5">
+                <div class="flex gap-5">
+                  <div>
+                    <img src="images/bus-logo.png" alt="">
+                  </div>
+                  
+                  <div>
+                    <h1 class="raleway-font text-3xl font-bold">Greenline Paribahan</h1>
+                    <p>Coach-009-WEB ! A_C Business</p>
+                  </div>
+                </div>
+                <div class="">
+                  <a class=" flex text-xl text-green-500 font-bold raleway-font border border-[#1dd1001a] bg-[#1dd1001a] py-4 px-7 rounded-xl"><img src="images/seat-green.png" alt="">
+                    <span id="available-seat"> 8</span><span class="mr-3 ml-3"> Seats Left</span></a>
+                </div>
+              </div>
+              <div class="border flex justify-center items-center" >
+                <div class="p-14 justify-center items-center">
+                  <img src="images/fare.png" alt="">
+                  <h3 class="raleway-font text-3xl font-bold">550 Taka</h3>
+                  <p>Per Sit</p>
+                </div>
+              </div>
+            </div>
+            <!-- sit section -->
+            <div class="flex mb-28">
+              <!-- sit -->
+              <div class="w-3/5 border-r">
+                <h3 class="raleway-font text-2xl font-semibold my-8">Select Your Seat</h3>
+                <div class="flex justify-between p-8">
+                  <div class="flex">
+                    <img src="images/seat-gray.png" alt="">
+                    <p>Available</p>
+                  </div>
+                  <div class="flex">
+                    <img src="images/seat-green-filled.png" alt="">
+                    <p>Selected</p>
+                  </div>
+                </div>
+
+                <div class=" flex justify-end">
+                  <kbd class="kbd kbd-lg"><img src="images/wheel@2x.png" alt=""></kbd>
+                </div>
+
+                  <div class="flex my-8 justify-between">
+                    <p>A</p>
+                    <kbd id="A1" class="kbd kbd-lg click-button"><p>A1</p></kbd>
+                    <kbd id="A2" class="kbd kbd-lg click-button"><p>A2</p></kbd>
+                    <kbd id="A3" class="kbd kbd-lg click-button"><p>A3</p></kbd>
+                    <kbd id="A4" class="kbd kbd-lg click-button"><p>A4</p></kbd>
+                  </div>
+              
+          
+                <div class="flex justify-between">
+                  <p>B</p>
+                  <kbd id="B1" class="kbd kbd-lg click-button">B1</kbd>
+                  <kbd id="B2" class="kbd kbd-lg click-button">B2</kbd>
+                  <kbd id="B3" class="kbd kbd-lg click-button">B3</kbd>
+                  <kbd id="B4" class="kbd kbd-lg click-button">B4</kbd>
+                </div>
+              </div>
+              <!-- payment -->
+              <div class="2/5">
+                <h3 class="raleway-font text-2xl font-semibold my-8">Select Your Seat</h3>
+                <div>
+                  <div class="overflow-x-auto border-b-2">
+                    <table class="table">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th>Seat <span id="seatBookingDisplay">0</span></th>
+                          <th>Class</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
+                      <tbody id="seat-booking-details">
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="flex justify-between">
+                    <h3 class="">Total Price</h3>
+                    <p><span id="">00</span> Tk</p>
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Have you cupon?" class="border w-3/4 rounded-3xl">
+                    <button class="btn">Aply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="scripts/ticket.js"></script>
 </body>
 </html>
