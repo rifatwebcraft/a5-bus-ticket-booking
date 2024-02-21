@@ -43,12 +43,19 @@ for (const seat of allSeat){
 
 
         totalPrice('total-price', parseInt(td2.innerText));
-        // grandTotalPrice('grand-total', parseInt(td2.innerText));
-        grandTotal();   
+        
+       
+
+        grandTotal(); 
+    
    
     })
 }
 
+
+
+
+// total price
 function totalPrice (id, value){
     const totalCost = document.getElementById(id).innerText;
     const convertTotal = parseInt(totalCost);
@@ -56,23 +63,52 @@ function totalPrice (id, value){
     const sumTotal = convertTotal + convertSingleCost;
    setInnerText(id, sumTotal);
 }
-function grandTotalPrice (id, value){
-    const totalCost = document.getElementById(id).innerText;
-    console.log(totalCost);
-    const convertTotal = parseInt(totalCost);
-    const convertSingleCost = value;
-    const sumTotal = convertTotal + convertSingleCost;
-   setInnerText(id, sumTotal);
-}
 
+
+
+// grand total
 function grandTotal(){
     const totalCost = document.getElementById('total-price').innerText;
     const convertTotalCost = parseInt(totalCost);
-
-
-
     setInnerText('grand-total', convertTotalCost);
+
+//   cupon input
+
+    document.getElementById('btn-aply').addEventListener('click', function(e){
+        const inputSection = document.getElementById('input-section');
+        inputSection.style.display = 'none';
+    
+    })
+
+    document.getElementById('input-cupon').addEventListener('keyup', function(e){
+        const text = e.target.value;
+        console.log(text);
+        const aplyButton = document.getElementById('btn-aply');
+    
+        if(text == 'NEW15'){
+            aplyButton.removeAttribute('disabled');
+            const discount = convertTotalCost * 15 / 100;
+           const  finalTotal = convertTotalCost - discount;
+            
+            setInnerText('grand-total', finalTotal);
+        }
+        else if(text == 'Couple 20'){
+            aplyButton.removeAttribute('disabled');
+            const discount = convertTotalCost * 20 / 100;
+            const  finalTotal = convertTotalCost - discount;
+            setInnerText('grand-total', finalTotal);
+        }
+
+        else{
+            aplyButton.setAttribute('disabled');
+        }
+       
+        
+    })     
+    
 }
+
+// set innertext
 function setInnerText(id, value){
     document.getElementById(id).innerText = value;
 }
