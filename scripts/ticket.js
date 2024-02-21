@@ -12,14 +12,13 @@ for (const seat of allSeat){
         }
         seat.classList.add('bg-green-400');
         count = count + 1;
-        // console.log(count);
-        // document.getElementById('seatBookingDisplay').innerText = count;
+    
         setInnerText('seatBookingDisplay', count);
 
 
 
         availableSeat = availableSeat-1;
-        // document.getElementById('available-seat').innerText = availableSeat;
+       
         setInnerText('available-seat', availableSeat);
 
         const seatName = e.target.innerText;
@@ -100,7 +99,7 @@ function grandTotal(){
         }
 
         else{
-            aplyButton.setAttribute('disabled');
+            aplyButton.setAttribute('disabled', true);
         }
        
         
@@ -112,3 +111,8 @@ function grandTotal(){
 function setInnerText(id, value){
     document.getElementById(id).innerText = value;
 }
+
+
+document.getElementById('modal-button').addEventListener('click', function(){
+    window.location.reload();
+})
